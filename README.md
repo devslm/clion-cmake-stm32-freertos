@@ -1,4 +1,4 @@
-# clion-cmake-stm32
+# clion-cmake-stm32-freertos
 Set up Clion with Cmake and FreeRTOS for cortex-m3 Stm32.
 In Clion add Cmake option (Settings -> Build, Execution, Deployment -> Cmake) -DCMAKE_TOOLCHAIN_FILE=STM32L1xx.cmake.
 
