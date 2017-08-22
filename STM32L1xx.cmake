@@ -3,9 +3,9 @@ INCLUDE(CMakeForceCompiler)
 SET(CMAKE_SYSTEM_NAME Generic)
 SET(CMAKE_SYSTEM_VERSION 1)
 
-# specify the cross compiler
-CMAKE_FORCE_C_COMPILER(D:/arm/bin/arm-none-eabi-gcc.exe GNU)
-CMAKE_FORCE_CXX_COMPILER(D:/arm/bin/arm-none-eabi-g++.exe GNU)
+# Specify the cross compiler. arm-none-eabi-gcc and arm-none-eabi-g++ are full path required
+CMAKE_FORCE_C_COMPILER(arm-none-eabi-gcc GNU)
+CMAKE_FORCE_CXX_COMPILER(arm-none-eabi-g++ GNU)
 
 SET(LINKER_SCRIPT ${PROJECT_SOURCE_DIR}/STM32L100RCTx_FLASH.ld)
 SET(COMMON_FLAGS "-mcpu=cortex-m3 -O2 -mthumb -ffunction-sections -fdata-sections -g -fno-common -fmessage-length=0")
