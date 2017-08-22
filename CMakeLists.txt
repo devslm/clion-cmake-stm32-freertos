@@ -33,7 +33,7 @@ include_directories(${FREERTOS_DIR}/include)
 include_directories(${FREERTOS_DIR}/portable/GCC/ARM_CM3/)
 include_directories(${FREERTOS_DIR}/portable/GCC/MemMang)
 
-add_executable(${PROJECT_NAME}.elf ${USER_SOURCES} ${HAL_SOURCES} ${LINKER_SCRIPT} ${FREERTOS_SOURCES} Src/gps/parser/nmea/NmeaParser.cpp)
+add_executable(${PROJECT_NAME}.elf ${USER_SOURCES} ${HAL_SOURCES} ${LINKER_SCRIPT} ${FREERTOS_SOURCES})
 
 target_link_libraries(${PROJECT_NAME}.elf CMSIS)
 
